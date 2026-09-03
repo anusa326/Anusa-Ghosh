@@ -80,6 +80,14 @@ export default function Hero() {
                 <span>View Exhibited Works</span>
                 <span className="material-symbols-outlined text-base">arrow_downward</span>
               </a>
+              <a
+                href="/Anusa-Ghosh-CV.docx"
+                download="Anusa Ghosh CV.docx"
+                className="inline-flex items-center justify-center gap-2 bg-secondary-container text-on-secondary-container hover:bg-secondary font-label text-[0.75rem] leading-[1rem] uppercase tracking-widest px-6 sm:px-8 py-4 rounded transition-all shadow-md hover:-translate-y-0.5 text-center"
+              >
+                <span className="material-symbols-outlined text-base">download</span>
+                <span>Download CV</span>
+              </a>
             </div>
           </div>
 
