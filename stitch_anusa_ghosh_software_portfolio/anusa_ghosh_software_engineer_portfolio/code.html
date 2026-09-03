@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error": "#ffffff",
+                "on-surface": "#1c1b1b",
+                "surface-variant": "#e5e2e1",
+                "on-secondary": "#ffffff",
+                "secondary": "#546250",
+                "inverse-primary": "#ffb59c",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#eae7e7",
+                "surface-container-highest": "#e5e2e1",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed": "#390c00",
+                "surface-container-low": "#f6f3f2",
+                "outline-variant": "#dec0b7",
+                "surface": "#fcf9f8",
+                "on-secondary-container": "#596654",
+                "background": "#fcf9f8",
+                "on-background": "#1c1b1b",
+                "tertiary-fixed": "#ffdcc3",
+                "inverse-surface": "#313030",
+                "tertiary-fixed-dim": "#ffb77d",
+                "error": "#ba1a1a",
+                "surface-container-lowest": "#ffffff",
+                "on-primary-container": "#fffbff",
+                "on-secondary-fixed": "#121f10",
+                "primary-fixed": "#ffdbcf",
+                "primary": "#9f3c16",
+                "on-tertiary-container": "#fffbff",
+                "tertiary-container": "#b15f00",
+                "surface-tint": "#a23e18",
+                "on-primary-fixed-variant": "#822801",
+                "primary-fixed-dim": "#ffb59c",
+                "surface-container": "#f0eded",
+                "on-tertiary-fixed-variant": "#6e3900",
+                "on-tertiary-fixed": "#2f1500",
+                "error-container": "#ffdad6",
+                "outline": "#8a726a",
+                "inverse-on-surface": "#f3f0ef",
+                "surface-bright": "#fcf9f8",
+                "secondary-fixed-dim": "#bccbb4",
+                "primary-container": "#bf542c",
+                "on-primary": "#ffffff",
+                "secondary-fixed": "#d8e7cf",
+                "tertiary": "#8d4b00",
+                "on-surface-variant": "#57423b",
+                "on-secondary-fixed-variant": "#3d4a39",
+                "secondary-container": "#d5e4cd",
+                "surface-dim": "#dcd9d9"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "space-sm": "0.75rem",
+                "space-3xl": "4.5rem",
+                "margin-desktop": "5rem",
+                "space-3xs": "0.125rem",
+                "space-md": "1rem",
+                "space-xs": "0.5rem",
+                "gutter-mobile": "1rem",
+                "gutter-desktop": "2rem",
+                "margin-tablet": "2.5rem",
+                "space-lg": "1.5rem",
+                "gutter-tablet": "1.5rem",
+                "margin-mobile": "1.25rem",
+                "space-5xl": "9rem",
+                "space-2xs": "0.25rem",
+                "space-xl": "2rem",
+                "space-4xl": "6rem",
+                "space-2xl": "3rem"
+        },
+        "fontFamily": {
+                "headline-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Playfair Display"
+                ],
+                "body-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "title-editorial": [
+                        "Playfair Display"
+                ],
+                "label-caption": [
+                        "Inter"
+                ],
+                "display-hero": [
+                        "Playfair Display"
+                ],
+                "headline-lg": [
+                        "Playfair Display"
+                ],
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "display-hero-mobile": [
+                        "Playfair Display"
+                ],
+                "headline-md": [
+                        "Playfair Display"
+                ],
+                "label-technical": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "headline-sm": [
+                        "1.25rem",
+                        {
+                                "lineHeight": "1.75rem",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "1rem",
+                        {
+                                "lineHeight": "1.65rem",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "2rem",
+                        {
+                                "lineHeight": "2.5rem",
+                                "letterSpacing": "0em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-sm": [
+                        "0.875rem",
+                        {
+                                "lineHeight": "1.45rem",
+                                "fontWeight": "400"
+                        }
+                ],
+                "title-editorial": [
+                        "1.5rem",
+                        {
+                                "lineHeight": "2rem",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caption": [
+                        "0.6875rem",
+                        {
+                                "lineHeight": "0.95rem",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-hero": [
+                        "4.5rem",
+                        {
+                                "lineHeight": "5rem",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "3rem",
+                        {
+                                "lineHeight": "3.5rem",
+                                "letterSpacing": "-0.015em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "1.125rem",
+                        {
+                                "lineHeight": "1.85rem",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-hero-mobile": [
+                        "2.75rem",
+                        {
+                                "lineHeight": "3.25rem",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "2rem",
+                        {
+                                "lineHeight": "2.5rem",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-technical": [
+                        "0.75rem",
+                        {
+                                "lineHeight": "1rem",
+                                "letterSpacing": "0.08em",
+                                "fontWeight": "500"
+                        }
+                ]
+        }
+},
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Anusa Ghosh Monogram Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UEU32V_GIkesN7cleqEal9z1JdTLQeAAl6okwzVoyua_6fIfgDqz2fYTdeeGAxkkKT9kXZCZMEUOk-QKSgW631jg7rXJqePE4RC3Lu3lS1QLex7W8o1gF2FJ1qwHbTSwxRnh-iVH0REH63FQaX_F_9wfWcFIdG-mEmk3t6zsH3OBwHMDFsKnaETqIPCbEbzFqbNKbeLFG93V6LCOlxZV0sPFNu5bVFqYFwlE-tyLU4MZTHgs4PettNvw"/><a class="font-title-editorial text-title-editorial tracking-tight text-on-surface hover:text-primary transition-colors" data-path="atelier" href="#">Anusa Ghosh</a><span class="hidden sm:inline-block font-label-caption text-label-caption uppercase tracking-wider text-secondary px-space-xs py-space-3xs bg-secondary-container/30 rounded">Software Engineer &amp; Creative Technologist</span></div><nav class="hidden lg:flex items-center gap-space-xl" data-active-classes="text-primary font-medium"><a aria-current="page" class="uppercase tracking-widest transition-colors text-primary font-medium" data-path="atelier" href="#">Atelier / About</a><a class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" data-path="selected-works" href="#">Selected Works</a><a class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" data-path="competencies" href="#">Competencies</a><a class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" data-path="exhibitions-and-certs" href="#">Exhibitions &amp; Certs</a><a class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-label-technical text-label-technical uppercase tracking-widest px-space-lg py-space-sm rounded transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="contact" href="#">Get in Touch</a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrVBXHUeYoV5_MSNvykfW6AwtTAELSeUjcmCkdw8kC2oIfi2TUNIVR3xm360YdINzCvU9acQikK5lUE0QF_fRhOZAkfhe890vLyFJ8wTtlV0rJ-cn4pU_uyWtb6dg9Ktg_4fXmBK-qPEXt0MvcZyrhJ07bccJhxOve-UEU-_y6HVjSVR8wTKT-YBKzpU2TIH_9mrJPn5qIHQDKZOCbMS7Hk7SOUMFkHShSGPtfpm89TEhs8ml7vjEG"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Atelier Hero Section -->
+<section class="relative w-full overflow-hidden px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-2xl lg:py-space-4xl">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center">
+<!-- Left: Artistic Statement & Identity -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Curatorial Badge -->
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-space-3xs bg-secondary-container/40 text-secondary rounded-full font-label-technical text-label-technical uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Atelier Dossier • Vol. I
+            </span>
+<span class="font-label-technical text-label-technical text-outline uppercase tracking-widest">Kolkata • West Bengal</span>
+</div>
+<!-- Editorial Display Headline -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero text-on-surface leading-[1.08] tracking-tight">
+              Crafting Code with an <span class="italic font-normal text-primary">Artist’s Intent.</span>
+</h1>
+<p class="font-title-editorial text-title-editorial text-on-surface-variant font-light mt-space-2xs">
+              ANUSA GHOSH — Software Engineer, Web Artisan &amp; BCA (Hons) Scholar
+            </p>
+</div>
+<!-- Academic Affiliation & Metric Callout -->
+<div class="flex flex-wrap items-center gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-caption text-label-caption uppercase tracking-wider text-secondary">Institution &amp; Merit</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Brainware University • CGPA 8.04</span>
+</div>
+<div class="w-px h-8 bg-surface-variant hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-label-caption text-label-caption uppercase tracking-wider text-secondary">Specialization</span>
+<span class="font-body-sm text-body-sm text-on-surface">Frontend Architecture • Algorithmic Logic</span>
+</div>
+</div>
+<!-- Bio / Objective Narrative -->
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+            A BCA scholar passionate about web development, seamlessly merging computational rigor with fine-arts sensibility. I build responsive, highly intuitive platforms using modern frameworks like React and Tailwind CSS, while engineering performant backends with Node.js and MySQL. Dedicated to crafting digital artifacts that embody both architectural soundness and aesthetic discipline.
+          </p>
+<!-- Quick Curatorial Contact Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-2xs font-label-technical text-label-technical text-on-surface-variant">
+<span class="inline-flex items-center gap-1 px-space-sm py-space-xs bg-surface-container rounded">
+<span class="material-symbols-outlined text-sm text-primary">pin_drop</span> Kolkata, WB
+            </span>
+<a class="inline-flex items-center gap-1 px-space-sm py-space-xs bg-surface-container hover:bg-surface-container-high rounded transition-colors text-on-surface" href="mailto:anusaghosh936@gmail.com">
+<span class="material-symbols-outlined text-sm text-primary">mail</span> anusaghosh936@gmail.com
+            </a>
+<a class="inline-flex items-center gap-1 px-space-sm py-space-xs bg-surface-container hover:bg-surface-container-high rounded transition-colors text-on-surface" href="tel:+917439482898">
+<span class="material-symbols-outlined text-sm text-primary">call</span> +91 7439482898
+            </a>
+</div>
+<!-- Call to Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-technical text-label-technical uppercase tracking-widest px-space-xl py-space-md rounded transition-all shadow-md hover:-translate-y-0.5" href="#selected-works">
+<span>View Exhibited Works</span>
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+</a>
+<button class="inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-technical text-label-technical uppercase tracking-widest px-space-xl py-space-md rounded transition-all" onclick="document.getElementById('curatorial-dossier-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-base text-primary">download</span>
+<span>Download Dossier / Resume</span>
+</button>
+</div>
+</div>
+<!-- Right: Museum-Grade Framed Portrait -->
+<div class="lg:col-span-5 flex justify-center lg:justify-end">
+<div class="relative w-full max-w-md p-space-md bg-surface-container-low rounded-2xl shadow-xl">
+<!-- Archival Gallery Mount Passepartout -->
+<div class="relative bg-surface p-space-sm rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative aspect-square w-full overflow-hidden rounded-lg bg-surface-container-high">
+<img alt="Anusa Ghosh studio portrait" class="w-full h-full object-cover object-center filter saturate-[0.95] contrast-[1.02] hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrVBXHUeYoV5_MSNvykfW6AwtTAELSeUjcmCkdw8kC2oIfi2TUNIVR3xm360YdINzCvU9acQikK5lUE0QF_fRhOZAkfhe890vLyFJ8wTtlV0rJ-cn4pU_uyWtb6dg9Ktg_4fXmBK-qPEXt0MvcZyrhJ07bccJhxOve-UEU-_y6HVjSVR8wTKT-YBKzpU2TIH_9mrJPn5qIHQDKZOCbMS7Hk7SOUMFkHShSGPtfpm89TEhs8ml7vjEG"/>
+<!-- Subtle Vignette Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/30 via-transparent to-transparent pointer-events-none"></div>
+<!-- Curatorial Seal in Corner -->
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-primary font-label-caption text-label-caption uppercase tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Portfolio No. 2025-01</span>
+</div>
+</div>
+<!-- Archival Plaque Under Portrait -->
+<div class="pt-space-md pb-space-xs px-space-xs flex items-center justify-between">
+<div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface italic">Anusa Ghosh</h3>
+<p class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Figurative &amp; Computational Discipline</p>
+</div>
+<div class="text-right">
+<span class="font-label-caption text-label-caption text-outline block">Medium</span>
+<span class="font-label-technical text-label-technical text-on-surface font-semibold">Web Craft • Algorithmic</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curricular Provenance / Academic Qualifications Section -->
+<section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl bg-surface-container-low" id="provenance">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block mb-space-2xs">Curatorial Record</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Curricular Provenance</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          A documented chronicle of foundational academic training in algorithmic science, mathematical logic, and computational systems.
+        </p>
+</div>
+<!-- Provenance Catalog Table / Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Academic Timeline Cards -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Item 1: BCA -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs bg-primary-fixed text-on-primary-fixed rounded font-label-technical text-label-technical uppercase tracking-wider font-semibold">In Progress</span>
+<span class="font-label-caption text-label-caption text-secondary">2024 — 2027</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Bachelor of Computer Applications (Hons.)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Brainware University • Barasat, Kolkata</p>
+<div class="flex flex-wrap gap-space-2xs pt-space-xs">
+<span class="px-space-xs py-space-3xs bg-surface-container-high rounded text-on-surface-variant font-label-caption text-label-caption">Data Structures</span>
+<span class="px-space-xs py-space-3xs bg-surface-container-high rounded text-on-surface-variant font-label-caption text-label-caption">DBMS Architecture</span>
+<span class="px-space-xs py-space-3xs bg-surface-container-high rounded text-on-surface-variant font-label-caption text-label-caption">Object Oriented Paradigms</span>
+</div>
+</div>
+<div class="sm:text-right flex flex-col sm:items-end shrink-0">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-secondary">Cumulative Grade</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">8.04 <span class="text-sm font-normal text-on-surface-variant font-body-sm">CGPA</span></span>
+<span class="font-label-caption text-label-caption text-outline">First Class Distinction</span>
+</div>
+</div>
+<!-- Item 2: Higher Secondary -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs bg-secondary-container text-on-secondary-container rounded font-label-technical text-label-technical uppercase tracking-wider">Completed</span>
+<span class="font-label-caption text-label-caption text-secondary">2020 — 2022</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Higher Secondary Examination (Class 10+2)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Champagachi High School (H.S.) • WBCHSE Board</p>
+<div class="flex flex-wrap gap-space-2xs pt-space-xs">
+<span class="px-space-xs py-space-3xs bg-surface-container-high rounded text-on-surface-variant font-label-caption text-label-caption">Mathematics</span>
+<span class="px-space-xs py-space-3xs bg-surface-container-high rounded text-on-surface-variant font-label-caption text-label-caption">Sciences</span>
+<span class="px-space-xs py-space-3xs bg-surface-container-high rounded text-on-surface-variant font-label-caption text-label-caption">Computer Literacy</span>
+</div>
+</div>
+<div class="sm:text-right flex flex-col sm:items-end shrink-0">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-secondary">Aggregate Score</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">83.6 <span class="text-sm font-normal text-on-surface-variant font-body-sm">%</span></span>
+<span class="font-label-caption text-label-caption text-outline">Distinction Honors</span>
+</div>
+</div>
+<!-- Item 3: Secondary -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs bg-secondary-container text-on-secondary-container rounded font-label-technical text-label-technical uppercase tracking-wider">Completed</span>
+<span class="font-label-caption text-label-caption text-secondary">2018 — 2020</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Secondary Madhyamik Examination (Class 10th)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Champagachi High School (H.S.) • WBBSE Board</p>
+</div>
+<div class="sm:text-right flex flex-col sm:items-end shrink-0">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-secondary">Final Assessment</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">66.1 <span class="text-sm font-normal text-on-surface-variant font-body-sm">%</span></span>
+<span class="font-label-caption text-label-caption text-outline">First Division</span>
+</div>
+</div>
+</div>
+<!-- Academic Competencies Sidebar Dossier -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="p-space-lg bg-surface rounded-xl shadow-sm h-full flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">account_tree</span>
+<h4 class="font-title-editorial text-title-editorial text-on-surface">Foundational Vectors</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Core computational curricula rigorously mastered across semesters:
+              </p>
+<!-- Curricular Pillars -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Frontend Scripting &amp; Styling</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">HTML5 Semantic Canvas, CSS3 Grid/Flexbox, ES6+ Logic</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Component Architecture</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">React.js state lifecycle, reusable UI paradigms</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Server-Side Runtimes</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Node.js event loop, Express routing, REST endpoints</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></span>
+<div>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface block">Database Systems &amp; Schemas</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">MySQL relational normalization, indexing &amp; CRUD safety</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Archival Verification Note -->
+<div class="p-space-sm bg-surface-container-high rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">school</span>
+<div class="flex flex-col">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-on-surface font-medium">BCA Candidate • Class of 2027</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Department of Computational Sciences</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery of Systems / Selected Works Section -->
+<section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-4xl" id="selected-works">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-3xl">
+<!-- Section Title & Curatorial Subtext -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">Exhibition Hall A</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Gallery of Systems</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+          Three curated software installations engineered under academic faculty mentorship, combining civic responsibility with structural clarity.
+        </p>
+</div>
+<!-- Project Exhibition Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-xl">
+<!-- Artwork 01: MyTarakeswar -->
+<article class="flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<!-- Visual Gallery Frame -->
+<div class="relative w-full aspect-[16/10] bg-surface-container p-space-sm flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="An editorial minimalist photograph of the ornate terracotta temple architectural details of Tarakeswar Bengal, warm sunlight casting sharp geometric shadows across centuries-old brickwork, subtle warm terracotta and sage palette, museum exhibition photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU7P9dM6Gww2QIQwuZl09CASq0E_OCdhzluBvsgBC5bUFT-fGaUFQE59W3nEPdckHXsxsV5ccP1JGwHb3UJB-zywZSF3fMwwA70nfaPFyNBJJ_tzTKg6XA7Kh7S7bXi_AJT7I8UwrHstgog46QT8PuTOaNinpdE_UcYihGmQ59kt5HQ1OXkDR3YwTcOVVGxdWgZUQJQLAn1-qAkMaHQrbnFvo-ngL8BWV4z71XAqPUVIv50TqM7ldI"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded font-label-technical text-label-technical text-on-surface font-semibold shadow-sm">
+              CATALOG NO. 01
+            </div>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-2.5 py-1 rounded font-label-caption text-label-caption uppercase tracking-wider">
+              Civic Heritage Platform
+            </div>
+</div>
+<!-- Exhibition Placard / Details -->
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-lg bg-surface">
+<div class="flex flex-col gap-space-sm">
+<!-- Academic Guide Attribution -->
+<div class="flex items-center gap-1.5 text-secondary font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-sm">person_pin</span>
+<span>Guide: Ms. Niyasha Patra • Computational Sciences</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface group-hover:text-primary transition-colors">
+                MyTarakeswar — Tourism &amp; Regional Cultural Guide
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Designed and developed a comprehensive civic and cultural platform based on Tarakeswar to showcase local heritage, pilgrimage navigation guides, and improve regional digital accessibility through an intuitive, mobile-first interface.
+              </p>
+<!-- Technical Palette Pills -->
+<div class="flex flex-wrap gap-space-2xs pt-space-2xs">
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">HTML5</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">CSS3</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">JavaScript</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">Node.js</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">MySQL</span>
+</div>
+</div>
+<!-- Inspect Code / Details Link -->
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Full Stack System</span>
+<a class="inline-flex items-center gap-1 text-primary font-label-technical text-label-technical uppercase tracking-widest font-semibold hover:underline" href="#contact">
+<span>Inquire Spec</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Artwork 02: Skill Mapping Engine -->
+<article class="flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<!-- Visual Gallery Frame -->
+<div class="relative w-full aspect-[16/10] bg-surface-container p-space-sm flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Abstract computational data visualization rendered on warm rag paper, clean mathematical vectors and skill radar graphs drawn in terracotta and sage ink, elegant editorial graphic design for engineering analysis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWqYH-ClGzERnkdM14aCQH9jT2GcC608YwzYAN_t-qA2hdqeTxmqHAX6yVOW0XzMDXJ9GE0JbMyxV-jd0rfX_QjbmuOmgzQFiyDC_iBPkuzgM3hemoQN3rhTlaNJv3QCuBeEWp_AR12IGnHtfNIJaF6iQcl8IWK3wjLb4APu4_ePktf1O2UH0sPKl9S4D6NHIG8QHasPB44tPpSlkB687qnmCQz_YOowbxI0LctN_0D3HHjijayPS"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded font-label-technical text-label-technical text-on-surface font-semibold shadow-sm">
+              CATALOG NO. 02
+            </div>
+<div class="absolute bottom-4 right-4 bg-secondary text-on-secondary px-2.5 py-1 rounded font-label-caption text-label-caption uppercase tracking-wider">
+              Analytical Engine
+            </div>
+</div>
+<!-- Exhibition Placard / Details -->
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-lg bg-surface">
+<div class="flex flex-col gap-space-sm">
+<!-- Academic Guide Attribution -->
+<div class="flex items-center gap-1.5 text-secondary font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-sm">person_pin</span>
+<span>Guide: Ms. Niyasha Patra • Computational Sciences</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface group-hover:text-primary transition-colors">
+                Skill Mapping &amp; Curriculum Gap Analysis System
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Engineered an analytical evaluation engine to assess, map, and visualize user competencies across technical domains. Dynamically detects institutional curriculum gaps and generates actionable, targeted improvement pathways.
+              </p>
+<!-- Technical Palette Pills -->
+<div class="flex flex-wrap gap-space-2xs pt-space-2xs">
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">HTML5 / CSS3</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">JavaScript</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">PHP Core</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">MySQL Relational</span>
+</div>
+</div>
+<!-- Inspect Code / Details Link -->
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Evaluation Framework</span>
+<a class="inline-flex items-center gap-1 text-primary font-label-technical text-label-technical uppercase tracking-widest font-semibold hover:underline" href="#contact">
+<span>Inquire Spec</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Artwork 03: Pharmacy Stock & Expiry Tracker -->
+<article class="flex flex-col bg-surface-container-low rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<!-- Visual Gallery Frame -->
+<div class="relative w-full aspect-[16/10] bg-surface-container p-space-sm flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Monochrome and warm earth-toned architectural interior of an apothecarial archival dispensary, rhythmic medicine shelves with precise geometric labels and warm ambient studio lighting, editorial museum catalog aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnuiazUREDAS2JBeKzqt4gAFhWSJv2DrMM-HwtMiIASWpAr2oXjm-CUU1ssBAL9o5NjXvLPR41I4a5X8dPHLultJiDMMsaL3eQHXNhmqlQIMGuQZRamS1Omys97qGintZrDJ563zLQVvdzIFsdieGlySbFVNK3vvB47hQsOqMcNMC5w9kixt-UqmJDVk1puue-9MuiSOyvwwB2qjVfkntmxBOopjcP5pWeAy6ZkPQ9bU2-Mf6T7gpR"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded font-label-technical text-label-technical text-on-surface font-semibold shadow-sm">
+              CATALOG NO. 03
+            </div>
+<div class="absolute bottom-4 right-4 bg-tertiary text-on-tertiary px-2.5 py-1 rounded font-label-caption text-label-caption uppercase tracking-wider">
+              Healthtech Assurance
+            </div>
+</div>
+<!-- Exhibition Placard / Details -->
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-lg bg-surface">
+<div class="flex flex-col gap-space-sm">
+<!-- Academic Guide Attribution -->
+<div class="flex items-center gap-1.5 text-secondary font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-sm">person_pin</span>
+<span>Guide: Dr. Manan Kumar Gupta • Computational Sciences</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface group-hover:text-primary transition-colors">
+                Pharmacy Stock &amp; Real-Time Expiry Lifecycle Tracker
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Built a high-accuracy inventory monitoring platform managing critical pharmaceuticals, batch lifecycles, and predictive expiration alerts to eliminate hazardous dispensations and optimize procurement turnover.
+              </p>
+<!-- Technical Palette Pills -->
+<div class="flex flex-wrap gap-space-2xs pt-space-2xs">
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">React.js UI</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">Bootstrap 5</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">PHP Endpoints</span>
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant font-label-technical text-label-technical rounded">MySQL InnoDB</span>
+</div>
+</div>
+<!-- Inspect Code / Details Link -->
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Inventory Automation</span>
+<a class="inline-flex items-center gap-1 text-primary font-label-technical text-label-technical uppercase tracking-widest font-semibold hover:underline" href="#contact">
+<span>Inquire Spec</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Technical & Artistic Competencies / "Palette of Skills" -->
+<section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl bg-surface-container-low" id="competencies">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block mb-space-2xs">Artisan Lexicon</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Palette of Skills</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          A balanced chromatic spectrum: spanning low-level language semantics, modern reactive component frontends, cloud topologies, and classical artistic discernment.
+        </p>
+</div>
+<!-- Bento-style Palette Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Palette 01: Languages -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">code_blocks</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Languages</h3>
+</div>
+<span class="font-label-caption text-label-caption text-secondary uppercase">Core Syntax</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">C Programming</span>
+<span class="font-label-caption text-label-caption text-secondary">Pointers • Memory</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Java</span>
+<span class="font-label-caption text-label-caption text-secondary">OOP • Collections</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Python</span>
+<span class="font-label-caption text-label-caption text-secondary">Basics • Scripts</span>
+</div>
+</div>
+</div>
+<!-- Palette 02: Web & Frontend Craft -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">palette</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Frontend Craft</h3>
+</div>
+<span class="font-label-caption text-label-caption text-secondary uppercase">Visual Systems</span>
+</div>
+<div class="flex flex-wrap gap-space-2xs">
+<span class="px-space-sm py-space-xs bg-surface-container text-on-surface rounded font-body-sm text-body-sm font-medium">HTML5 Semantics</span>
+<span class="px-space-sm py-space-xs bg-surface-container text-on-surface rounded font-body-sm text-body-sm font-medium">CSS3 Layouts</span>
+<span class="px-space-sm py-space-xs bg-surface-container text-on-surface rounded font-body-sm text-body-sm font-medium">JavaScript (ES6+)</span>
+<span class="px-space-sm py-space-xs bg-primary-fixed text-on-primary-fixed rounded font-body-sm text-body-sm font-semibold">React.js</span>
+<span class="px-space-sm py-space-xs bg-surface-container text-on-surface rounded font-body-sm text-body-sm font-medium">Tailwind CSS</span>
+<span class="px-space-sm py-space-xs bg-surface-container text-on-surface rounded font-body-sm text-body-sm font-medium">Node.js</span>
+</div>
+</div>
+<!-- Palette 03: Cloud & Infrastructure -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">cloud_sync</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Cloud &amp; Infra</h3>
+</div>
+<span class="font-label-caption text-label-caption text-secondary uppercase">AWS Foundation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            AWS re/Start trained practitioner in infrastructure provisioning, security &amp; storage:
+          </p>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-xs bg-surface-container-low rounded flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-technical text-label-technical font-semibold text-on-surface">Amazon EC2</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-technical text-label-technical font-semibold text-on-surface">Amazon S3</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-technical text-label-technical font-semibold text-on-surface">AWS IAM</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-technical text-label-technical font-semibold text-on-surface">VPC &amp; CloudWatch</span>
+</div>
+</div>
+</div>
+<!-- Palette 04: Data & Schemas -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">database</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Data Architecture</h3>
+</div>
+<span class="font-label-caption text-label-caption text-secondary uppercase">Relational</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center p-space-xs bg-surface-container-low rounded">
+<span class="font-body-sm text-body-sm text-on-surface">MySQL RDBMS</span>
+<span class="font-label-caption text-label-caption text-primary font-medium">Schema Design</span>
+</div>
+<div class="flex justify-between items-center p-space-xs bg-surface-container-low rounded">
+<span class="font-body-sm text-body-sm text-on-surface">Relational Queries &amp; CRUD</span>
+<span class="font-label-caption text-label-caption text-secondary">Normalized</span>
+</div>
+<div class="flex justify-between items-center p-space-xs bg-surface-container-low rounded">
+<span class="font-body-sm text-body-sm text-on-surface">Firebase Fundamentals</span>
+<span class="font-label-caption text-label-caption text-secondary">NoSQL Exploration</span>
+</div>
+</div>
+</div>
+<!-- Palette 05: Developer Toolkit -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">terminal</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Developer Toolkit</h3>
+</div>
+<span class="font-label-caption text-label-caption text-secondary uppercase">Workflow</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl">integration_instructions</span>
+<span class="font-label-technical text-label-technical text-on-surface font-medium">VS Code</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl">commit</span>
+<span class="font-label-technical text-label-technical text-on-surface font-medium">Git / GitHub</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl">bug_report</span>
+<span class="font-label-technical text-label-technical text-on-surface font-medium">DevTools</span>
+</div>
+</div>
+</div>
+<!-- Palette 06: Fine Arts Sensibility & Soft Skills -->
+<div class="p-space-lg bg-surface-container-highest rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-xl">brush</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Fine Arts Synthesis</h3>
+</div>
+<span class="font-label-caption text-label-caption text-tertiary font-bold uppercase tracking-wider">Gold Medals</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Twice Gold Medalist in Fine Arts &amp; Painting (Bangiya Sangeet Parishad). Translates painterly balance, color harmony, and composition directly into UI design.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-2xs">
+<span class="px-space-xs py-space-3xs bg-surface rounded text-on-surface font-label-caption text-label-caption font-semibold">Trilingual: Bengali / Hindi / English</span>
+<span class="px-space-xs py-space-3xs bg-surface rounded text-on-surface font-label-caption text-label-caption">Collaborative Synergy</span>
+<span class="px-space-xs py-space-3xs bg-surface rounded text-on-surface font-label-caption text-label-caption">Technical Writing</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Chronology, Certifications & Academic Seminars -->
+<section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-4xl" id="chronology">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+<!-- Left Column: Professional Chronology -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">Experience &amp; Internships</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Chronology &amp; Residencies</h2>
+</div>
+<!-- Timeline Vertical Track -->
+<div class="flex flex-col gap-space-lg">
+<!-- Timeline Item 1 -->
+<div class="flex gap-space-md">
+<div class="flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-primary ring-4 ring-primary-fixed shrink-0"></div>
+<div class="w-0.5 h-full bg-surface-container-highest mt-1"></div>
+</div>
+<div class="p-space-lg bg-surface-container-low rounded-xl flex flex-col gap-space-2xs w-full shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-secondary font-semibold">Scheduled Cohort</span>
+<span class="font-label-caption text-label-caption text-outline">Jan 2026 — Apr 2026</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">AWS re/Start Cloud Graduate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Don Bosco Tech Society • Cloud Computing Program</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+                  Selected for comprehensive enterprise cloud development curriculum, covering AWS core cloud infrastructure, Linux fundamentals, networking, script automation, and operational readiness.
+                </p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex gap-space-md">
+<div class="flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-secondary ring-4 ring-secondary-fixed shrink-0"></div>
+<div class="w-0.5 h-full bg-surface-container-highest mt-1"></div>
+</div>
+<div class="p-space-lg bg-surface-container-low rounded-xl flex flex-col gap-space-2xs w-full shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-secondary font-semibold">Upcoming Engagement</span>
+<span class="font-label-caption text-label-caption text-outline">Aug 2025 — Sep 2025</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Web Development Intern</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">CodSoft • Virtual Engineering Division</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+                  Hands-on development of production-grade responsive websites, landing interfaces, and interactive web tools employing vanilla JavaScript and modern CSS architectures.
+                </p>
+</div>
+</div>
+<!-- Timeline Item 3: Fine Arts Medals Anchor -->
+<div class="flex gap-space-md">
+<div class="flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-tertiary ring-4 ring-tertiary-fixed shrink-0"></div>
+</div>
+<div class="p-space-lg bg-surface-container rounded-xl flex flex-col gap-space-2xs w-full shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-tertiary font-bold">First Position • Gold Medals</span>
+<span class="font-label-caption text-label-caption text-outline">2017 — 2019</span>
+</div>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Bangiya Sangeet Parishad State Painting Exhibition</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conferred 1st Prize Gold Medals across two consecutive annual sessions (2017–2018 and 2018–2019), demonstrating mastery of spatial balance and visual tonality.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Academic Conferences & Seminars -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest">Colloquia &amp; Symposia</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Academic Seminars</h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Conference Card 1 -->
+<div class="p-space-md bg-surface rounded-xl shadow-sm flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-space-3xs bg-surface-container text-primary rounded font-label-technical text-label-technical uppercase tracking-wider font-semibold">International Conference</span>
+<span class="font-label-caption text-label-caption text-outline">May 23–24, 2025</span>
+</div>
+<h4 class="font-title-editorial text-title-editorial text-on-surface">ICSCI 2025</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                International Conference on Sustainable Computing for Industry • Brainware University. Explored energy-efficient computing models and sustainable algorithm runtimes.
+              </p>
+</div>
+<!-- Workshop Card 2 -->
+<div class="p-space-md bg-surface rounded-xl shadow-sm flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-space-3xs bg-surface-container text-secondary rounded font-label-technical text-label-technical uppercase tracking-wider font-semibold">Hands-on Intensive</span>
+<span class="font-label-caption text-label-caption text-outline">May 17–18, 2025</span>
+</div>
+<h4 class="font-title-editorial text-title-editorial text-on-surface">Neurons &amp; Tokens: ML, Deep Learning &amp; LLMs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Intensive workshop covering foundation architectures, tokenization mechanisms, neural network fine-tuning, and practical Generative AI pipelines.
+              </p>
+</div>
+<!-- Seminar Card 3 -->
+<div class="p-space-md bg-surface rounded-xl shadow-sm flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface-variant rounded font-label-technical text-label-technical uppercase tracking-wider">Industry Symposium</span>
+<span class="font-label-caption text-label-caption text-outline">March 7, 2025</span>
+</div>
+<h4 class="font-title-editorial text-title-editorial text-on-surface">TechFusion: Industrial Automation &amp; IoT</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Examined industrial telemetry, sensor networks, cloud edge computing, and real-time distributed systems at Brainware University.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Personal Dossier & Curatorial Declaration -->
+<section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl bg-surface-container-low" id="declaration">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Archival Verification Stamp & Metadata Box -->
+<div class="lg:col-span-5 p-space-xl bg-surface rounded-2xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption uppercase tracking-widest text-secondary">Registry Dossier</span>
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base">fingerprint</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<div class="flex justify-between items-center py-space-2xs border-b border-surface-container-high">
+<span class="text-on-surface-variant font-label-technical text-label-technical uppercase">Date of Birth</span>
+<span class="font-medium text-on-surface">10 October 2003</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs border-b border-surface-container-high">
+<span class="text-on-surface-variant font-label-technical text-label-technical uppercase">Nationality</span>
+<span class="font-medium text-on-surface">Indian</span>
+</div>
+<div class="flex justify-between items-center py-space-2xs border-b border-surface-container-high">
+<span class="text-on-surface-variant font-label-technical text-label-technical uppercase">Linguistic Fluency</span>
+<span class="font-medium text-on-surface">Bengali, Hindi, English</span>
+</div>
+<div class="flex flex-col gap-1 py-space-2xs">
+<span class="text-on-surface-variant font-label-technical text-label-technical uppercase">Permanent Residence</span>
+<span class="font-medium text-on-surface">Chowhata, Haroa, North 24 Parganas, West Bengal 743425</span>
+</div>
+</div>
+<!-- Wax Seal / Archival Stamp Graphic -->
+<div class="pt-space-xs flex items-center gap-space-md p-space-sm bg-surface-container rounded-lg">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-editorial text-title-editorial font-bold shrink-0 shadow-inner">
+              AG
+            </div>
+<div class="flex flex-col">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-on-surface font-semibold">Official Seal of Provenance</span>
+<span class="font-label-caption text-label-caption text-outline">Candidate • Brainware University Dept of CS</span>
+</div>
+</div>
+</div>
+<!-- Formal Declaration Plaque -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Formal Attestation</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Curatorial Declaration</h3>
+</div>
+<blockquote class="p-space-lg bg-surface rounded-xl shadow-sm text-body-lg text-on-surface italic leading-relaxed">
+            “I hereby solemnly affirm and state that all particulars, academic achievements, project specifications, and credentials detailed within this monograph are genuine, verifiable, and faithfully presented to the best of my knowledge and artistic-scientific standard.”
+          </blockquote>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-title-editorial text-title-editorial text-primary italic font-semibold">Anusa Ghosh</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Candidate • Signature on Record</span>
+</div>
+<div class="text-right">
+<span class="font-label-technical text-label-technical text-on-surface font-bold">Kolkata, WB</span>
+<span class="font-label-caption text-label-caption text-secondary block">Recorded • Year 2025</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inquiries & Curatorial Dispatch / Contact Section -->
+<section class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-4xl" id="contact">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-3xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-technical text-label-technical text-primary uppercase tracking-widest block mb-space-2xs">Curatorial Dispatch</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Initiate Collaboration</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Available for software engineering roles, frontend development residencies, and creative computational commissions.
+        </p>
+</div>
+<!-- Main Contact Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Direct Coordinates -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Email Card with 1-Click Copy -->
+<div class="p-space-lg bg-surface-container-low rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-secondary uppercase tracking-widest">Electronic Dispatch</span>
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<a class="font-title-editorial text-title-editorial text-on-surface hover:text-primary transition-colors font-medium break-all" href="mailto:anusaghosh936@gmail.com">
+              anusaghosh936@gmail.com
+            </a>
+<div class="pt-space-xs">
+<button class="font-label-technical text-label-technical uppercase tracking-wider text-primary hover:underline font-semibold" onclick="navigator.clipboard.writeText('anusaghosh936@gmail.com'); this.textContent = 'Copied to Clipboard!'; setTimeout(() =&gt; this.textContent = 'Copy Address', 2000)">
+                Copy Address
+              </button>
+</div>
+</div>
+<!-- Phone Card -->
+<div class="p-space-lg bg-surface-container-low rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-secondary uppercase tracking-widest">Telephone Terminal</span>
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<a class="font-title-editorial text-title-editorial text-on-surface hover:text-primary transition-colors font-medium" href="tel:+917439482898">
+              +91 7439482898
+            </a>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Available Monday through Saturday • IST</span>
+</div>
+<!-- Location Badge Card -->
+<div class="p-space-lg bg-surface-container-low rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-secondary uppercase tracking-widest">Primary Geographic Station</span>
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<span class="font-title-editorial text-title-editorial text-on-surface">Kolkata, West Bengal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Chowhata, Haroa, North 24 Parganas 743425</span>
+</div>
+</div>
+<!-- Elegant Inquiry Dispatch Form -->
+<div class="lg:col-span-7 p-space-xl bg-surface-container rounded-2xl shadow-md">
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Thank you. Your dispatch has been transmitted to Anusa Ghosh.'); this.reset();">
+<div class="flex flex-col gap-space-3xs">
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Transmit an Inquiry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fill in the dossier details below to inaugurate dialogue.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-3xs">
+<label class="font-label-technical text-label-technical uppercase tracking-wider text-on-surface">Your Name / Title</label>
+<input class="px-space-md py-space-sm bg-surface rounded text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. Dr. Aris Thorne" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<label class="font-label-technical text-label-technical uppercase tracking-wider text-on-surface">Your Email</label>
+<input class="px-space-md py-space-sm bg-surface rounded text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. aris@studio.org" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<label class="font-label-technical text-label-technical uppercase tracking-wider text-on-surface">Engagement Scope</label>
+<select class="px-space-md py-space-sm bg-surface rounded text-on-surface font-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm">
+<option>Full-Time Technical Engineering</option>
+<option>Frontend &amp; UI Architecture Apprenticeship</option>
+<option>Academic Research Collaboration</option>
+<option>Creative Web Commission</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<label class="font-label-technical text-label-technical uppercase tracking-wider text-on-surface">Communication Dispatch</label>
+<textarea class="px-space-md py-space-sm bg-surface rounded text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm resize-none" placeholder="Briefly detail the project parameters or open role..." required="" rows="4"></textarea>
+</div>
+<button class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-technical text-label-technical uppercase tracking-widest py-space-md rounded shadow-md hover:-translate-y-0.5 transition-all" type="submit">
+<span>Send Dispatch to Atelier</span>
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal for Dossier Download -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/60 backdrop-blur-sm p-4" id="curatorial-dossier-modal">
+<div class="bg-surface rounded-2xl p-space-xl max-w-lg w-full shadow-2xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">description</span>
+<h3 class="font-title-editorial text-title-editorial text-on-surface">Curated Dossier</h3>
+</div>
+<button class="text-on-surface-variant hover:text-primary" onclick="document.getElementById('curatorial-dossier-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Candidate:</strong> Anusa Ghosh (BCA Hons., CGPA 8.04)</p>
+<p><strong class="text-on-surface">Format:</strong> Archival PDF Curated Edition • 2 Pages</p>
+<p><strong class="text-on-surface">Focus:</strong> Frontend Engineering, Node.js, AWS Cloud, Fine Arts</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm">
+<button class="flex-1 inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-technical text-label-technical uppercase tracking-wider py-space-sm rounded transition-all" onclick="alert('Preparing download for Anusa_Ghosh_CV_2025.pdf...'); document.getElementById('curatorial-dossier-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>Download PDF</span>
+</button>
+<button class="px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high rounded font-label-technical text-label-technical uppercase tracking-wider text-on-surface" onclick="document.getElementById('curatorial-dossier-modal').classList.add('hidden')">
+          Cancel
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-space-4xl"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl flex flex-col gap-space-2xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl items-start"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-title-editorial text-title-editorial text-on-surface">Anusa Ghosh</span><span class="font-label-caption text-label-caption text-secondary uppercase px-space-xs py-space-3xs bg-secondary-container/40 rounded">Curated Dossier</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Engineering algorithmic rigor with gallery-grade aesthetic discipline. Architectural software systems, distributed interfaces, and creative technology.</p><div class="flex items-center gap-space-xs pt-space-xs"><span class="material-symbols-outlined text-secondary text-sm">location_on</span><span class="font-label-technical text-label-technical text-on-surface-variant tracking-wider">KOLKATA, WEST BENGAL, INDIA</span></div></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-label-caption text-label-caption text-secondary uppercase tracking-widest">Navigation Catalogue</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="atelier" href="#">Atelier &amp; Academic Background</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="selected-works" href="#">Selected Works &amp; Research</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="competencies" href="#">Technical Competencies &amp; Systems</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="exhibitions-and-certs" href="#">Exhibitions, Accreditations &amp; Certifications</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Inquiries &amp; Curatorial Dispatch</a></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-caption text-label-caption text-secondary uppercase tracking-widest">Declaration &amp; Status</span><div class="p-space-md bg-surface rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-technical text-label-technical text-on-surface uppercase tracking-wider">Available for Commissions</span></div><p class="font-label-caption text-label-caption text-on-surface-variant">Open to high-impact technical architecture roles, specialized engineering residencies, and creative consulting.</p></div></div></div><div class="pt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md font-label-caption text-label-caption text-on-surface-variant"><div class="flex items-center gap-space-xs"><span>© 2025 Anusa Ghosh.</span><span>All monographs, code repositories, and editorial rights reserved.</span></div><div class="flex items-center gap-space-lg"><span class="uppercase tracking-widest text-secondary">Monograph Edition No. 04</span><a class="hover:text-primary transition-colors underline underline-offset-4" data-path="colophon" href="#">Colophon</a></div></div></div></footer></body></html>
