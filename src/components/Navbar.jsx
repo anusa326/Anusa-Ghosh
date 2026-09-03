@@ -6,6 +6,7 @@ const navLinks = [
   { label: 'Projects', href: '#selected-works', icon: 'deployed_code' },
   { label: 'Technical Skills', href: '#competencies', icon: 'code_blocks' },
   { label: 'Internships', href: '#chronology', icon: 'school' },
+  { label: 'Certificates', href: '#certificates', icon: 'workspace_premium' },
   { label: 'Contact', href: '#contact', icon: 'mail' },
 ];
 

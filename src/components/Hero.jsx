@@ -32,7 +32,7 @@ export default function Hero() {
                   Institution &amp; Merit
                 </span>
                 <span className="font-sans text-[1rem] leading-[1.65rem] font-semibold text-on-surface">
-                  Brainware University &bull; CGPA 8.04
+                  Brainware University &bull; CGPA 8.01
                 </span>
               </div>
               <div className="w-px h-8 bg-surface-variant hidden sm:block"></div>

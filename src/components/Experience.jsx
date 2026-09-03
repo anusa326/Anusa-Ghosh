@@ -52,6 +52,30 @@ const seminars = [
   },
 ];
 
+const certificates = [
+  {
+    badge: 'Certificate of Achievement',
+    badgeColor: 'bg-surface-container text-primary',
+    date: 'April 30, 2026',
+    title: 'TCS iON Career Edge \u2013 IT for Non-IT',
+    desc: 'Certificate of Achievement for successfully completing the TCS iON Career Edge course for Non-IT professionals, covering foundational IT concepts, digital technologies, and workplace readiness skills.',
+  },
+  {
+    badge: 'Participation',
+    badgeColor: 'bg-surface-container text-secondary',
+    date: 'May 17, 2024',
+    title: 'Circuit Craft 2K24',
+    desc: 'Participated in Circuit Craft 2K24, a hands-on electronics and circuit design competition held on 17 May 2024.',
+  },
+  {
+    badge: 'Certificate of Completion',
+    badgeColor: 'bg-surface-container text-tertiary',
+    date: 'April 30, 2026',
+    title: 'Wadhwani Foundation \u2013 Basic Certification',
+    desc: 'Certificate of Completion (Basic) issued by Wadhwani Foundation, recognizing successful completion of foundational professional development coursework.',
+  },
+];
+
 export default function Experience() {
   return (
     <section className="w-full px-4 sm:px-5 md:px-10 lg:px-20 py-14 lg:py-16" id="chronology">
@@ -118,6 +142,30 @@ export default function Experience() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="mt-12 lg:mt-16" id="certificates">
+          <div className="flex flex-col gap-1 mb-8">
+            <span className="font-label text-[0.75rem] leading-[1rem] text-primary uppercase tracking-widest">
+              Credentials & Recognition
+            </span>
+            <h2 className="font-display text-[2rem] leading-[2.5rem] sm:text-[3rem] sm:leading-[3.5rem] text-on-surface">Certificates</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {certificates.map((item, i) => (
+              <div key={i} className="p-5 bg-surface-container-low rounded-xl shadow-sm flex flex-col gap-1">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className={`px-2 py-0.5 rounded font-label text-[0.75rem] leading-[1rem] uppercase tracking-wider font-semibold ${item.badgeColor}`}>
+                    {item.badge}
+                  </span>
+                  <span className="font-label text-[0.6875rem] leading-[0.95rem] text-outline">{item.date}</span>
+                </div>
+                <h4 className="font-display text-[1.15rem] leading-[1.6rem] text-on-surface">{item.title}</h4>
+                <p className="font-sans text-[0.875rem] leading-[1.45rem] text-on-surface-variant pt-1">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

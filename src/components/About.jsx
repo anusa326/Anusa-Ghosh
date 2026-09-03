@@ -25,7 +25,7 @@ const education = [
     title: 'Bachelor of Computer Applications (Hons.)',
     school: 'Brainware University \u2022 Barasat, Kolkata',
     tags: ['Data Structures', 'DBMS Architecture', 'Object Oriented Paradigms'],
-    metric: { label: 'Cumulative Grade', value: '8.04', unit: 'CGPA', sub: 'First Class Distinction', color: 'text-primary' },
+    metric: { label: 'Cumulative Grade', value: '8.01', unit: 'CGPA', sub: 'First Class Distinction', color: 'text-primary' },
   },
   {
     status: 'Completed',
