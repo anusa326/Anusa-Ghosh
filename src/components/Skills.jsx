@@ -59,7 +59,7 @@ const skillCategories = [
     subtitle: 'Communication',
     subtitleColor: 'text-tertiary',
     type: 'special',
-    desc: 'Twice Gold Medalist in Painting Competition (Bangiya Sangeet Parishad). Trilingual communication in Bengali, Hindi, and English.',
+    desc: 'Trilingual communication in Bengali, Hindi, and English.',
     tags: ['Bengali / Hindi / English', 'Team Work', 'Report Writing'],
   },
 ];

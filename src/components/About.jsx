@@ -21,7 +21,7 @@ const education = [
   {
     status: 'In Progress',
     statusColor: 'bg-primary-fixed text-on-primary-fixed',
-    years: '2024 — 2027',
+    years: '2023 — 2027',
     title: 'Bachelor of Computer Applications (Hons.)',
     school: 'Brainware University \u2022 Barasat, Kolkata',
     tags: ['Data Structures', 'DBMS Architecture', 'Object Oriented Paradigms'],

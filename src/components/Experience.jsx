@@ -71,7 +71,7 @@ const certificates = [
     badge: 'Certificate of Completion',
     badgeColor: 'bg-surface-container text-tertiary',
     date: 'April 30, 2026',
-    title: 'Wadhwani Foundation \u2013 Basic Certification',
+    title: 'Wadhwani Foundation \u2013 ADVANCED',
     desc: 'Certificate of Completion (Basic) issued by Wadhwani Foundation, recognizing successful completion of foundational professional development coursework.',
   },
 ];
